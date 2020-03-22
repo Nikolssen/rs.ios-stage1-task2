@@ -18,7 +18,6 @@
             int counter=0;
             for (int i=0; i<[word length]; i++) {
                 if ([vovelSet characterIsMember:[tempString characterAtIndex:i]]) {
-                   // [[tempString objectAtIndex:i] uppercaseString];
                     range.location = i;
                     NSString *curChar = [word substringWithRange:range];
                     [tempString replaceCharactersInRange:range withString:[curChar uppercaseString]];
